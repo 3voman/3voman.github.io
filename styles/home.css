@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+html {
+    scroll-behavior:smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    z-index: 12;
+    position: absolute;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0%;
+    position: fixed;
+    transition: all ease 0.3s;
+}
+
+.scrolled{
+    background: rgba(0, 0, 0, 0.623);
+}
+
+nav a{
+    background:none;
+    font-weight: 800;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.06cm;
+}
+
+nav a:hover{
+    color: #D4D2CF;
+}
+
+nav img{
+    width: 120px;
+    height: 70px;
+}
+
+.backimg{
+    background: url(../images/section1.jpg);
+    width: 100%;
+    height: 710px;
+    background-size: cover;    
+}
+
+.center{
+    width: 100%;
+    height: 190px;
+    color: white;   
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    align-items: center;
+}
+
+.center h1{
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 0.6cm;
+    font-weight: 900;
+    font-size: 55px;
+}
+
+.center p{
+    font-size:19px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center button{
+    width: 15%;
+    height: 5vh;
+    background: black;
+    color: white;
+    border: none;
+    margin: 1% 2% 0 0;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.center button:hover{
+    background: white;
+    color: black;
+}
+
+.about{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about_txt{
+    width: 70%;
+    height: 300px;
+    display: flex;
+    margin-top: 15vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.aboutdesc{
+    width: 65%;
+    height: 70vh;
+    margin-left: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutdesc h2{
+    font-size: 36px;
+    letter-spacing: 0.1cm;
+    font-family: 'Amatic SC', cursive;
+}
+
+.aboutdesc p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.7cm;
+    font-size: 16px;
+    color: #333333;
+}
+
+.aboutdesc button{
+    font-weight: 700;
+    width: 35%;
+    height: 8vh;
+    background: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.about_txt button:hover{
+    background: black;
+    color: #fff;
+}
+
+.aboutbackimg{
+    background: url(../images/about-chefs.jpg);
+    width: 1150px;
+    height: 550px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.beforemenu{
+    width: 100%;
+    height: 550px;
+}
+
+.beforemenuimg{
+    width: 100%;
+    height: 550px;
+    background: url(../images/section2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.beforemenucontent{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: 10% 0 0 28%;
+    color: white;
+    position: absolute;
+}
+
+.beforemenucontent h1{
+    font-size: 68px;
+    letter-spacing: 0.5cm;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+}
+
+.beforemenucontent p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.beforemenucontent button{
+    width: 30%;
+    height: 5vh;
+    background: black;
+    border: 2px solid black;
+    color: white;
+    font-size: 18px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.beforemenucontent button:hover{
+    color: black;
+    background: white;
+    border: 2px solid white;
+}
+
+.productmenu{
+    width: 100%;
+    height: 75vh;
+    background:#EEEEEF;
+    display: flex;
+    flex-direction: column;
+}
+
+.menutitle{
+    width: 100%;
+    height: 5vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+.menucategories{
+    width: 100%;
+    height: 45vh;
+    background:#EEEEEF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.producttitle{
+    width: 25%;
+    height: 250px;
+}
+
+.menucategories h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:#b4b2b2;
+    font-size: 12px;
+}
+
+.menucategories span + span{
+    color:#cc9900;
+}
+
+.menucategories ul {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    line-height: 36px;
+} 
+
+.menucategories ul li:before{
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #959595;
+    font-weight: 600;
+    content:
+    ". . . . . . . . . . "
+    ". . . . . . . . . . "
+    ". . . . . . . . . . . "
+    ". . . . . . . . . . . "
+}
+    
+.menucategories ul span:first-child{
+    padding-right: 0.33em;
+    background: #EEEEEF;
+}
+    
+.menucategories ul span + span{
+    float: right;
+    padding-left: 0.33em;
+    color:#cc9900;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.menucategories ul span:first-child{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color:#333333;
+}
+
+.delivery{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+}
+
+.delivery img{
+    width: 700px;
+    height: 500px;  
+    margin: 14vh 0 0 10vh;
+}
+
+.deliverydescription{
+    width: 75%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10vh 0 0 20vh;
+}
+
+.deliverydescription h1{
+    font-size: 34px;
+    letter-spacing: 0.2cm;
+    color: #0a0a0a;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+}
+
+.deliverydescription p{
+    width: 90%;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.deliverydescription button{
+    width: 30%;
+    height: 8vh;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.deliverydescription button:hover{
+    background: black;
+    color:white;
+}
+
+.afterdelivery{
+    width: 100%;
+    height: 550px;
+}
+
+.afterdeliveryimg{
+    width: 100%;
+    height: 550px;
+    background: url(../images/bestservice.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    position: absolute;
+}
+
+.afterdeliveryimg::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.afterdeliverycontent{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: 10% 0 0 23%;
+    color: white;
+    position: absolute;
+}
+
+.afterdeliverycontent h1{
+    font-size: 66px;
+    letter-spacing: 0.5cm;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+
+.afterdeliverycontent p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.specialoffers{
+    width: 100%;
+    height:600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards{
+    width: 100%;
+    height: auto;
+    margin: 10vh 0 0 11vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.offercard{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offerback{
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin: 5vh 0 0 25px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerback:hover{
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+}
+
+.offerback img{
+    width: 100px;
+    height: 100px;
+}
+
+.offercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+.specialoffers h1{
+    font-size: 36px;
+    letter-spacing: 0.1cm;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+    color: #0a0a0a;
+}
+
+.specialoffers p{
+    padding-top: 5px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.desserts{
+    width: 100%;
+    height: 550px;
+}
+
+.dessertimg{
+    width: 100%;
+    height: 550px;
+    background: url(../images/deserts.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+.dessertimg::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.dessertcontent{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dessertcontent h1{
+    font-size: 66px;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+    line-height: 100px;
+    letter-spacing: 0.5cm;
+}
+
+.dessertcontent p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+}
+
+.reservation{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reservationcard{
+    width: 27%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 12vh;
+}
+
+.reservationcard h1{
+    font-size: 36px;
+    line-height: 30px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;    
+}
+
+.reservationcard p{
+    width: 80%;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.reservationcard h4{
+    font-size: 16px;
+    line-height: 16px;
+    color: #333333;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reservationcard button{
+    width: 40%;
+    height: 60px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.reservationcard button:hover{
+    background:black;
+    color: white;
+}
+
+.reservationcard span{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    line-height: 24px;
+}
+
+footer{
+    width: 100%;
+    height: 650px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe{
+    width: 45%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.subscribe p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.subscribe h1{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2cm;
+    text-align: center;
+}
+
+.inputsection{
+    width:60%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.inputsection input{
+    width:45%;
+    height: 55px;
+    background: none;
+    border:2px solid white;
+    padding-left: 20px;
+    color: white;
+}
+
+.inputsection input::placeholder{
+    color: white;
+}
+
+.inputsection button{
+    width:15%;
+    height: 60px;
+    border-radius: 5px;
+    background: #FECC01;
+    color: #FEFFFE;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footermenu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10vh;
+}
+
+.social img, .social.img:hover{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.sitecategories{
+    width: 35%;
+    height: 5vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sitecategories a{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sitecategories a:hover{
+    color: #7B7B7B;
+}
+
+.sitecategories a{
+    color: #464646;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1280px){
+    nav{
+        top: 3%;
+    }
+}
