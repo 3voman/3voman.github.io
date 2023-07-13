@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <title>Twinker - Sign Up</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <link href="../css/profile.css" rel="stylesheet" media="all">
+    <script src="/js/data.js"></script>
+    <script src="/js/myprofile.js"></script>
+
+</head>
+<body>
+    <div class="headerbar" id="headerspace">
+
+    </div>
+    <div class="accountControlBox" id="accControl">
+        <ul>
+            <li>
+                <a href="./My-Profile/">My Profile</a>
+            </li>
+            <li>
+                <a href="./My-Profile/">Log Out</a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-wrapper p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">პროფილი</h2>
+                    <form method="POST">
+                        <div class="row row-space" id="profile-row">
+                            <div class="row-2">
+                                <div class="input-group" id="profile-group">
+                                    <img src="/images/default-profile-picture.jpg" id="profile_pic">
+                                    <label for="input-file">პროფილის ფოტოს შეცვლა</label>
+                                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label"><b>ელფოსტა</b></label>
+                                    <span class="user-profile-mail-span">giorgigogidze39@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label"><b>სახელი</b></label>
+                                    <span class="user-profile-mail-firstname" style="font-size: 17px;">გიორგი</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label"><b>პაროლი</b></label>
+                                    <div class="input-group-icon">
+                                        <button class="btnprofile btn--radius-2 btn--red" style="font-size: 15px;" type="">პაროლის შეცვლა</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group age-input">
+                                <label class="label"><b>ასაკი</b></label>
+                                <label class="label">20</label>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label"><b>სქესი</b></label>
+                                        <div class="p-t-5">
+                                                <span class="" style="font-size: 18px;">მამრობითი</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let profilePic = document.getElementById("profile_pic")
+    let inputFile = document.getElementById("input-file")
+
+    inputFile.onchange = function(){
+        profilePic.src = URL.createObjectURL(inputFile.files[0]);
+    }
+</script>
+
+</body>
+
+</html>

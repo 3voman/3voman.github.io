@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <title>Twinker - Log In</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="../js/login.js"></script>
+    <link href="../css/login.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+
+    <div class="headerbar">
+        <div class="headercontent">
+            <div class="header-leftsection">
+                <div class="logospace">
+                    <img src="#" alt="">
+                    <a href="/index.html">Logo</a>
+                </div>
+                <div class="menul">
+                    <ul>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/Stranger-Chat/Chat/">Chat</a>
+                        </li>
+                        <li>
+                            <a href="/User-Profile/">User Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-rightsection">
+                <div class="logregbox">
+                   <a href="/Login/">Log In</a>
+                   <span>/</span>
+                   <a href="/Register/">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accountControlBox" id="accControl">
+        <ul>
+            <li>
+                <a href="./My-Profile/">My Profile</a>
+            </li>
+            <li>
+                <a href="./My-Profile/">Log Out</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-gra-02 p-t-130 p-b-100 font-poppins authbox">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Log In</h2>
+                    <form method="POST">
+                        <div class="column row-space">
+                            <div class="row-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email">
+                                </div>
+                            </div>
+                            <div class="row-2">
+                                <label class="label">Password</label>
+                                <div class="input-group" id="login-pass-input-group">
+                                    <ion-icon onclick="hidepass()" id="eyeopen" name="eye-off" style="position:absolute;"></ion-icon>
+                                    <input id="typepass" class="input--style-4" type="password" name="password" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--red" type="submit">Log In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footercontent">
+            <div class="footleftsection">
+                <a href="/index.html">
+                    <img src="#" alt="">Logo
+                </a>
+                <ul>
+                    <li>
+                        <a href="/About/" class="selected">About</a>
+                    </li>
+                    <li>
+                        <a href="/Privacy-Policy/" class="selected">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/Contact-Us/" class="selected">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/Terms-And-Conditions/" class="selected">Terms And Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

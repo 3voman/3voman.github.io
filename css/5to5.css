@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+body::-webkit-scrollbar{
+    display: none;
+  }  
+
+  .scroll::-webkit-scrollbar {
+    display: none;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+*{
+    transition: all 0.1s ease;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: rgb(250,66,81);
+    --maincolorgradient: radial-gradient(circle, rgba(250,66,81,1) 38%, rgba(184,3,37,1) 75%, rgba(79,20,32,1) 100%);
+    --headerblack: #2c2c2c;
+    --contentbackgroundcolor: #f1f3f6;
+    --mainpagecontenttitle: #fff6a9;
+}
+
+/* .dark-mode{
+    --maincolor: #585858;
+    --headeryellow: #FFCA08;
+    --textcolor: #D6D6D7;
+    --contentbackgroundcolor: #35363A;
+    --aretitle: #dddddd;
+    --tablelines: #646464;
+    --tableback: #3b3b3b;
+    --tabletext: #dddddd;
+    --itemselected: #FFCA08;
+    --categorytitle: #dddddd;
+    .darkicon1{
+        color: white;
+    }
+} */
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background: rgb(250,66,81);
+    background: radial-gradient(circle, rgba(250,66,81,1) 38%, rgba(184,3,37,1) 75%, rgba(79,20,32,1) 100%);
+  }
+
+.darkicon1{
+    transition: all 0.2s ease;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.darkicon1:hover{
+    color: rgb(129, 129, 129);
+}
+
+.headerbar{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 2px 35px black;
+    background: #2c2c2c;
+    top: 0;
+}
+
+.headercontent{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-leftsection{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-rightsection{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logregbox button{
+    width: 100px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0;
+    background: rgb(250,66,81);
+    background: radial-gradient(circle, rgba(250,66,81,1) 38%, rgba(184,3,37,1) 75%, rgb(236, 93, 122) 100%);
+    color: #fff; 
+}
+
+.logregbox a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.logospace{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logospace img{
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+
+.logospace a{
+    font-size: 28px;
+    text-decoration: none;
+    color: #eaecf0;
+    text-shadow: 2px 2px 10px black;
+    font-family: 'Ultra', serif;
+    font-weight: 100;
+}
+
+.menul{
+    width: 350px;
+}
+
+.menul ul{
+    width: 100%;
+    height: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    list-style: none;
+}
+
+.menul ul a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease;
+    font-size: 1vw;
+    font-weight: 550;
+}
+
+.menul ul a:hover{
+    color: var(--headeryellow)
+}
+
+.marker{
+    width: 60%;
+    height: 0.3vh;
+    background: var(--mainpagecontenttitle);
+    margin: 0 auto;
+}
+
+.menul .selected{
+    color: var(--mainpagecontenttitle);
+}
+
+.header-prof-pic img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.accountControlBox{
+    width: 250px;
+    height: 90px;
+    position: absolute;
+    right: 0.7%;
+    background: #FFFFFF;
+    display:none;
+    border-radius: 10px;
+}
+
+.accountControlBox ul{
+    height: 90px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountControlBox ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.accountControlBox ul li{
+    width: 90%;
+    height: 4vh;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.accountControlBox ul li:hover{
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.partners-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 240px 0;
+    user-select: none;
+}
+
+/* .matches{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+} */
+
+.users-images, .partners-images{
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+    flex-direction: row;
+}
+
+
+.userimg{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.partnerimg{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.userimgchild{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 2px 1px 15px 1px rgb(82, 82, 82);
+
+}
+
+.blurreduserimg{
+    filter: blur(3px);
+}
+
+.partbetween{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.footleftsection ul a:hover{
+    color: #fdf28f;
+}
+
+@media screen and (max-width:1024px){
+    .image {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    .overlay {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .category-container{
+        width: 98%;
+    }
+
+    .card-container{
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container{
+        width: 350px;
+    }
+    
+}
